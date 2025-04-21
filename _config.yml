@@ -1,0 +1,44 @@
+# ========================  
+#  Heize's H² Garden  
+#  v1.2 (2025-04-21)  
+# ========================  
+
+# 🌿 메타데이터  
+title: "Heize's H² Garden"  
+description: "A digital greenhouse for hybrid thoughts – tech, life, and unclassified seeds."  
+baseurl: ""  
+url: "https://heize-lee.github.io"  
+
+# 🏡 정원 구조  
+remote_theme: "jekyll/minima"  
+collections:  
+  seeds:  # 분류되지 않은 아이디어 보관함  
+    output: true  
+    permalink: /garden/:path/  
+  
+  published:
+    output: true
+    permalink: /:path/
+
+# 💡 성장 조건  
+plugins:  
+  - jekyll-feed                # 생각의 광합성(피드)  
+  - jekyll-seo-tag             # 검색엔진 수분 공급  
+  # - jekyll-archives            # 과거 씨앗 보관 시스템  
+  - jekyll-github-metadata     # GitHub 기반 온실 관리  
+
+# 🔭 환경 제어  
+github:  
+  metadata: true  
+  pages: true  
+  repository: "heize-lee/heize-lee.github.io"  
+
+defaults:
+  - scope:
+      path: "_posts/🌱_seeds/*"
+    values:
+      layout: "seed"
+  - scope:
+      path: "_posts/🌸_blooms/*"
+    values:
+      layout: "bloom"
