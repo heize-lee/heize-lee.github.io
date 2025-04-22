@@ -1,13 +1,5 @@
-# 필수 항목
-_site/
-.jekyll-cache/
-.sass-cache/
-Gemfile.lock
-assets/.cache/
-
-# 선택 항목
-.DS_Store
-*.swp
-.env
-Gemfile.lock
-/_posts/_published/_site/
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
